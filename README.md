@@ -1,0 +1,1 @@
+Artificial neural network(MLP) for classification. 1-4 input, hidden layer(sigmoidal activation function), 3 output(sigmoidal activation function).
