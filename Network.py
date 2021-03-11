@@ -97,7 +97,7 @@ class Network(object):
     def print_error_plot(self, save_0_print_1_none_2, path, name):
         plt.plot(self.error_X, self.error_Y)
         plt.xlabel('x')
-        plt.ylabel('y')
+        plt.ylabel('error')
         plt.title('Error function')
         if save_0_print_1_none_2==0:
             plt.savefig(os.path.join(path, str(name) + 'error.png'))
@@ -109,7 +109,7 @@ class Network(object):
     def print_correct_plot(self, save_0_print_1_none_2, path, name):
         plt.plot(self.error_X, self.correct_Y)
         plt.xlabel('x')
-        plt.ylabel('y')
+        plt.ylabel('correctness [%]')
         plt.title('Percentage objects classyfication correctness')
         if save_0_print_1_none_2==0:
             plt.savefig(os.path.join(path, str(name) + 'correct.png'))

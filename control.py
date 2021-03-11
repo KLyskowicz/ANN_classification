@@ -22,10 +22,10 @@ Error_measure_frequency = 1
 Topology = [Neuron_in,Neuron_hidden,3]
 Activation_fun_topology = ['sigmoid','sigmoid','sigmoid']
 
-fromFile = np.loadtxt(fname='training_data_1.csv', delimiter=' ')
+fromFile = np.loadtxt( os.path.dirname(os.path.realpath(__file__)) + '\\' + 'training_data_1.csv', delimiter=' ')
 X1 = fromFile[:,0:5]
 
-fromFile = np.loadtxt(fname='test_data.csv', delimiter=' ')
+fromFile = np.loadtxt( os.path.dirname(os.path.realpath(__file__)) + '\\' + 'test_data.csv', delimiter=' ')
 X3 = fromFile[:,0:5]
 
 X2 = []
